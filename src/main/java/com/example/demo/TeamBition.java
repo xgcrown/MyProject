@@ -11,7 +11,10 @@ public class TeamBition {
     public static final String TOKEN_APPID = "_appId";
 
     public static void main(String[] args) {
-        String a = genAppToken("c60b1ef0-9f02-11ea-b8c4-5b32f7e3e500","88b82643-3b81-4a95-b280-67a1b9cb752d");
+        //正式环境
+        String a = genAppToken("5e1ede0abe825b35f14791c2","a0EJqXvqTrpXUflHRjBZQ7VXMRY3BqIT");
+        //测试环境
+        //String a = genAppToken("a28a8260-7df4-11ea-97b4-a58e928b1b7e","9d5c30f1-c73e-4809-af95-6a8dfb1f1c4f");
         System.out.println(a);
     }
 
