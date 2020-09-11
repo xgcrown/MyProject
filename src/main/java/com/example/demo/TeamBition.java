@@ -19,7 +19,7 @@ public class TeamBition {
     }
 
 
-    public static String genAppToken(String appId, String appSecret) {
+    static String genAppToken(String appId, String appSecret) {
         if (StringUtils.isEmpty(appId) || StringUtils.isEmpty(appSecret)) {
             return null;
         }
