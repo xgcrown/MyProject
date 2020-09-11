@@ -11,7 +11,7 @@ public class TeamBition {
     public static final String TOKEN_APPID = "_appId";
 
     public static void main(String[] args) {
-        //正式环境1
+        //正式环境2
         String a = genAppToken("5e1ede0abe825b35f14791c2","a0EJqXvqTrpXUflHRjBZQ7VXMRY3BqIT");
         //测试环境
         //String a = genAppToken("a28a8260-7df4-11ea-97b4-a58e928b1b7e","9d5c30f1-c73e-4809-af95-6a8dfb1f1c4f");
