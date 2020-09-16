@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.util;
 import net.sourceforge.pinyin4j.PinyinHelper;
 public class checkNum {
     public static void main(String[] args) {

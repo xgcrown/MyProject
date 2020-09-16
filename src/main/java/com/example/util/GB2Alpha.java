@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.util;
 
 public class GB2Alpha {
     //字母Z使用了两个标签，这里有２７个值
