@@ -1,14 +1,13 @@
 package com.example.Mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.Entity.Countries;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Mapper
 @Repository
-public interface IndexMapper {
+public interface CountriesMapper extends BaseMapper<Countries> {
 
-    List<Countries> selectAll();
+    Countries query();
 }

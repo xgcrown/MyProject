@@ -4,9 +4,7 @@ import com.example.Entity.Countries;
 import com.example.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,9 +15,15 @@ public class IndexController {
     @Autowired
     IndexService indexService;
 
-    @PostMapping("/index")
+    @GetMapping("/selectById")
     @ResponseBody
-    public List<Countries> index() {
-        return indexService.selectAll();
+    public Countries selectById(@RequestParam(value = "countryId") String id) {
+        return indexService.selectById(id);
+    }
+
+    @PostMapping("/getAll")
+    @ResponseBody
+    public List<Countries> getAll() {
+        return indexService.getAll();
     }
 }

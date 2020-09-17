@@ -32,6 +32,7 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>2.1.2</version>
 		</dependency>
+
 		<!-- mp 依赖 -->
 		<dependency>
 			<groupId>com.baomidou</groupId>
