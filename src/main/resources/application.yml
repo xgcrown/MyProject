@@ -7,7 +7,7 @@ spring:
  datasource:
   driverClassName: com.mysql.jdbc.Driver
   password: admin
-  url: jdbc:mysql://localhost:3306/mybatis?characterEncoding=UTF-8&serverTimezone=UTC
+  url: jdbc:mysql://localhost:3306/mybatis?characterEncoding=UTF-8&serverTimezone=GMT%2B8
   username: root
 
 #xml地址

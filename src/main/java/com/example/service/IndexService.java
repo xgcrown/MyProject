@@ -17,14 +17,16 @@ public class IndexService {
     public Countries selectById(String id) {
         QueryWrapper<Countries> wrapper = new QueryWrapper();
         wrapper.eq("country_id",id);
-        //return countriesMapper.selectOne(wrapper);
-        return countriesMapper.query();
+        return countriesMapper.selectOne(wrapper);
+
     }
 
     public List<Countries> getAll() {
         QueryWrapper<Countries> wrapper = new QueryWrapper();
-        //wrapper.eq("country_id","AU");
-
+        wrapper.eq("country_id","AU");
         return countriesMapper.selectList(wrapper);
+    }
+    public Countries query() {
+        return countriesMapper.query();
     }
 }

@@ -17,7 +17,7 @@ public class IndexController {
 
     @GetMapping("/selectById")
     @ResponseBody
-    public Countries selectById(@RequestParam(value = "countryId") String id) {
+    public Countries selectById(@RequestParam("countryId") String id) {
         return indexService.selectById(id);
     }
 
@@ -25,5 +25,15 @@ public class IndexController {
     @ResponseBody
     public List<Countries> getAll() {
         return indexService.getAll();
+    }
+
+    /**
+     * 手动xml
+     * @return
+     */
+    @PostMapping("/query")
+    @ResponseBody
+    public Countries query() {
+        return indexService.query();
     }
 }
