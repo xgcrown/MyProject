@@ -23,7 +23,6 @@ public class IndexService {
 
     public List<Countries> getAll() {
         QueryWrapper<Countries> wrapper = new QueryWrapper();
-        wrapper.eq("country_id","AU");
         return countriesMapper.selectList(wrapper);
     }
     public Countries query() {
