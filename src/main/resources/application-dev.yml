@@ -5,10 +5,12 @@ server:
 #数据库连接
 spring:
  datasource:
-  driverClassName: com.mysql.jdbc.Driver
-  password: admin
-  url: jdbc:mysql://localhost:3306/mybatis?characterEncoding=UTF-8&serverTimezone=GMT%2B8
-  username: root
+  platform: oracle
+  driverClassName: oracle.jdbc.OracleDriver
+  password: mdm_viewer
+  #url: jdbc:oracle:thin:@10.3.5.196:1521:easorcl
+  url: jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.3.5.196)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=easorcl)))
+  username: mdm_viewer
 
 #xml地址
 #mybatis.mapper-locations=classpath:mapper/*.xml
