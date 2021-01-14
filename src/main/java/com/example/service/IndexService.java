@@ -30,7 +30,6 @@ public class IndexService {
         return countriesMapper.selectList(wrapper);
     }
     public Countries query() {
-        //test1
         return countriesMapper.query();
     }
 
