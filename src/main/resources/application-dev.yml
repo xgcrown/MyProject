@@ -16,6 +16,7 @@ spring:
 #mybatis-plus
 mybatis-plus:
  configuration:
+  #字段下划线转驼峰
   map-underscore-to-camel-case: true
   #在控制台打印SQL
   log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
